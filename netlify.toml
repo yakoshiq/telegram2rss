@@ -1,0 +1,12 @@
+[functions]
+  node_bundler = "esbuild"
+
+[build.environment]
+  PNPM_FLAGS="--frozen-lockfile"
+
+[build]
+  command = "pnpm netlify-build"
+  publish = "public"
+
+[template.environment]
+  HOSTING_URL = "change me for the URL where app is going to be hosted"
